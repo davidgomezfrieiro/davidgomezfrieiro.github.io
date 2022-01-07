@@ -76,6 +76,11 @@ form {
     border: none;
     border-radius: 50px;
     align-self: flex-end;
+    
+}
+
+.submit-button:hover {
+    transform: scale(1.025);
 }
 
 header {
@@ -100,6 +105,10 @@ header h1 {
     
 }
 
+.title > h1:hover {
+    text-shadow: 0 0 20px white;
+}
+
 .logo, .title, .pages {
     display: inline-block;
     vertical-align: middle;
@@ -108,7 +117,11 @@ header h1 {
 .logo img   {
     width: 80px;
     height: 80px;
-    margin: 10px
+    margin: 10px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
 }
 
 .pages {
@@ -127,9 +140,17 @@ header h1 {
     margin-bottom: px;
 }
 
+.pages > img:hover {
+    box-shadow: 0 0 20px white;
+}
+
 .pages > a {
     color: white;
     text-decoration: none;
+}
+
+.pages > a:hover {
+    text-shadow: 0 0 20px white;
 }
 
 .main-text {
@@ -172,16 +193,23 @@ button {
     
 }
 
+button:hover {
+    transform: scale(1.025);
+}
+
 .log-in-sign-up {
     background-color: rgb(27, 27, 27);
     margin: 40px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 0 20px 2px ;
     margin-left: 55px;
     margin-right: 40px;
     margin-top: 55px;
     height: fit-content;
+}
+
+.log-in-sign-up:hover {
+    box-shadow: 0 0 20px white;
 }
 
 hr {
@@ -330,6 +358,7 @@ footer {
         width: 100%;
         height: 3px;
         background-color: white;
+        box-shadow: 0 0 20px white;
       }
 
 }
