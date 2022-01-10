@@ -15,9 +15,9 @@ body {
 main {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 7%;
-    gap: 50px;
+    
     
     
 }
@@ -87,7 +87,6 @@ header {
     background-color: rgb(27, 27, 27);
     color: white;
     margin: 0;
-    height: fit-content;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -101,7 +100,7 @@ header h1 {
 
 .title {
     font-size: 20px;
-    margin-left: 140px;
+    margin-left: 4vw;
     
 }
 
@@ -112,6 +111,10 @@ header h1 {
 .logo, .title, .pages {
     display: inline-block;
     vertical-align: middle;
+}
+
+.logo {
+    margin-right: 6vw;
 }
 
 .logo img   {
@@ -130,7 +133,8 @@ header h1 {
     justify-content: space-evenly;
     gap: 40px;
     align-content: center;
-    margin-right: 60px;
+    margin-right: 3vw;
+    padding-right: 2vw;
 }
 
 .pages > img {
@@ -155,7 +159,12 @@ header h1 {
 
 .main-text {
     text-align: left;
-    margin: 40px;
+    width: 25vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-top: 3vh;
 }
 
 p {
@@ -175,11 +184,13 @@ ul, li {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-right: 4vw;
 }
 
 iframe {
     border-radius: 10px;
     box-shadow: 0 0 50px rgb(46, 46, 46);
+    width: 40vw;
 }
 
 button {
@@ -195,6 +206,10 @@ button {
 
 button:hover {
     transform: scale(1.025);
+}
+
+.main-text, .log-in-sign-up, .video-and-button {
+    
 }
 
 .log-in-sign-up {
@@ -314,7 +329,6 @@ footer {
     display: none;
   }
   
-  /*------ ADDED CSS ---------*/
   
 
 
@@ -377,6 +391,10 @@ footer {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .main-text {
+        width: 90%;
     }
     
     .title {
